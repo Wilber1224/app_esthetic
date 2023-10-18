@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('appointments', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        // Schema::create('appointments', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->foreignId('user_id');
+        //     ->constrained('user')
+        //     ->cascadeOnDelete();
+
+        //     $table->timestamps();
+        // });
     }
 
     /**

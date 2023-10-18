@@ -42,4 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    //funcion de modelo relacion de uno a muchos (hasMany)
+    //verificar las demas relaciones uno a uno y demas
+    public function appointment()
+    {
+        return $this->hasMany(Appointment::class);
+    }
 }
