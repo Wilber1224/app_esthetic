@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Appointment>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Inventory>
  */
-class AppointmentFactory extends Factory
+class InventoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,7 @@ class AppointmentFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => 1,
-            'date' => now(),
+            //
         ];
     }
 }
