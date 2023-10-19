@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            //eliminar en cascada
-            $table->engine="innoDB";
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('role');
-            $table->string('password');
-            $table->rememberToken();
+        Schema::create('inventories', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('inventories');
     }
 };
